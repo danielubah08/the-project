@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: "Red Hat Text", sans-serif;
+    text-align: center;
+    background-color: #1E1F29;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Countdown Container */
+.box {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Countdown Timer */
+.countdown {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.time-box {
+    width: 100px;
+    height: 100px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+/* Labels for Timer */
+.DOG {
+    display: flex;
+    justify-content: space-evenly ;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.DOG span {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 🔹 Responsive Design 🔹 */
+@media (max-width: 768px) {
+    /* Tablet View */
+    .countdown {
+        gap: 10px;
+    }
+    
+    .time-box {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    
+    .DOG span {
+        font-size: 0.8rem;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile View */
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .time-box {
+        width: 70px;
+        height: 70px;
+        font-size: 1.3rem;
+    }
+
+    .DOG {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .DOG span {
+        font-size: 0.75rem;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
